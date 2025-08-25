@@ -23,5 +23,4 @@ borrowSchema.post("save", async function (doc){
     }
 })
 
-
 export const Borrow = mongoose.model<IBorrow>("Borrow", borrowSchema);
