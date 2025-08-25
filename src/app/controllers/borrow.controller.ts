@@ -5,7 +5,6 @@ import { sendError } from "../../utils/handleError";
 
 export const borrowRouter = express.Router();
 
-
 borrowRouter.post("/", async (req: Request, res: Response, next: NextFunction) => {
   const { book: bookId, quantity, dueDate } = req.body;
   try {
@@ -68,7 +67,3 @@ borrowRouter.get("/", async (req: Request, res: Response) => {
     data: summary,
   });
 });
-
-
-
-
