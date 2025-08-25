@@ -28,7 +28,6 @@ const bookSchema = new Schema<IBook, Model<IBook>, bookMethods>(
   }
 );
 
-
 bookSchema.method(
   "updateBookAvailability",
  async function () {
@@ -36,7 +35,6 @@ bookSchema.method(
     await this.save();
   }
 );
-
 
 bookSchema.pre("save", async function (next){
   this.available = this.copies > 0 ? true : false;
