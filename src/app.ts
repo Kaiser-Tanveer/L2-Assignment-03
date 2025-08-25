@@ -14,7 +14,7 @@ const app = express();
 // config dotenv
 dotenv.config();
 
-// middleware
+// middlewares
 app.use(express.json());
 app.use(cors());
 
@@ -22,7 +22,7 @@ app.use(cors());
 app.use("/api/books", bookRouter);
 app.use("/api/borrow", borrowRouter);
 
-// health check
+// health checking route
 app.get("/", (req, res) => {
   res.send("Library Management server in running well");
 });
