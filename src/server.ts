@@ -7,7 +7,7 @@ const PORT: number = 5000;
 
 async function main() {
   try {
-    await mongoose.connect('mongodb+srv://kaisertanveer0:kaisertanveer0@cluster0.fuozxdw.mongodb.net/library-management?retryWrites=true&w=majority&appName=Cluster0');
+    await mongoose.connect('mongodb+srv://library_management_user:library_management_password@cluster0.fuozxdw.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0');
 
     console.log('✅ Connected to MongoDB with Mongoose');
 
